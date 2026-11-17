@@ -45,6 +45,13 @@ section{padding:64px 0}h2{font-size:clamp(26px,4vw,36px);margin:0 0 8px;letter-s
 .cta h2{color:#fff}.cta p{opacity:.9;margin:0 0 20px}.cta .btn{background:#fff;color:#3a22a8;border:0}
 footer{padding:34px 0;color:var(--muted);font-size:14px;text-align:center}
 footer a{color:var(--muted);text-decoration:underline}footer a:hover{color:#6d4aff}
+@media(max-width:720px){nav{gap:14px}nav>div{flex:1;min-width:0;overflow-x:auto;white-space:nowrap;text-align:right;scrollbar-width:none}nav>div::-webkit-scrollbar{display:none}nav a.l{margin-left:14px}}
+.new{background:linear-gradient(135deg,var(--accent),#c77dff);color:#fff;padding:3px 10px;border-radius:99px;font-size:12px;font-weight:700;letter-spacing:.04em;vertical-align:middle;margin-right:8px}
+.odoo{background:radial-gradient(70% 60% at 50% 0,var(--soft),transparent);border-top:1px solid var(--line)}
+.odoo .shot{margin-top:28px}
+.odoo .grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.odoo .qs{margin:26px 0 30px}
+.small{color:var(--muted);font-size:12.5px;text-align:center;margin-top:18px}
 .promo{display:block;width:100%;max-width:900px;margin:0 auto;border-radius:14px;border:1px solid rgba(128,128,128,.25);background:#000}
 </style>
 </head>
@@ -52,7 +59,7 @@ footer a{color:var(--muted);text-decoration:underline}footer a:hover{color:#6d4a
 <div class="wrap">
   <nav>
     <a class="logo" href="#"><img src="icon.png" alt="">AskaDB</a>
-    <div><a class="l" href="demo/">Demo</a><a class="l" href="app/">Files app</a><a class="l" href="#how">How it works</a><a class="l" href="#safe">Safety</a><a class="l" href="#db">Databases</a><a class="l" href="https://apps.microsoft.com/detail/9N9RGB8ZRK8N" target="_blank" rel="noopener">Microsoft Store</a></div>
+    <div><a class="l" href="#odoo">For Odoo</a><a class="l" href="demo/">Demo</a><a class="l" href="app/">Files app</a><a class="l" href="#how">How it works</a><a class="l" href="#safe">Safety</a><a class="l" href="#db">Databases</a><a class="l" href="https://apps.microsoft.com/detail/9N9RGB8ZRK8N" target="_blank" rel="noopener">Microsoft Store</a></div>
   </nav>
 
   <header class="hero">
@@ -82,6 +89,22 @@ footer a{color:var(--muted);text-decoration:underline}footer a:hover{color:#6d4a
     </div>
   </section>
 
+  <section id="odoo" class="odoo">
+    <h2><span class="new">NEW</span>Ask your Odoo in plain words</h2>
+    <p class="sub">AskaDB recognises an Odoo database by itself. It knows Odoo's tables and the rules that trip people up, so you get the right number the first time.</p>
+    <div class="grid">
+      <div class="card"><div class="ic">✓</div><h3>Recognises Odoo</h3><p>Connect and see "Odoo 18 recognised", with your apps: Sales, Invoicing, Inventory, Purchase, CRM, Employees and Time Off. Tested on Odoo 17, 18 and 19.</p></div>
+      <div class="card"><div class="ic">§</div><h3>Knows the rules</h3><p>Only posted invoices count. Lost deals are archived. Credit notes are negative. AskaDB already knows, so you don't have to explain.</p></div>
+      <div class="card"><div class="ic">+</div><h3>Your own fields</h3><p>Fields your team added in Odoo are understood too, with their labels. No setup.</p></div>
+      <div class="card"><div class="ic">⛨</div><h3>Read-only login script</h3><p>One script creates a login that can only read and can't see passwords, API keys or mail settings.</p></div>
+    </div>
+    <div class="chips qs"><span class="chip">Which customer invoices are overdue?</span><span class="chip">Who owes us the most money?</span><span class="chip">Top 10 customers this year</span><span class="chip">Stock on hand per product</span><span class="chip">Open pipeline by stage</span><span class="chip">Employees per department</span></div>
+    <div class="btns"><a class="btn p" href="https://www.linkedin.com/company/140384006/" target="_blank" rel="noopener">Request early access</a><a class="btn" href="#safe">How we keep it safe</a></div>
+    <p class="note" style="text-align:center">Early access is free for companies that run Odoo on their own server. Odoo Online (odoo.com hosting) does not allow a direct database connection yet.</p>
+    <div class="shot"><video src="askadb-odoo.mp4" poster="odoo-shot.webp" controls playsinline preload="none" width="1920" height="1080" style="display:block;width:100%;height:auto" aria-label="30-second video: AskaDB answering questions on an Odoo database"></video></div>
+    <p class="small">Odoo is a trademark of Odoo S.A. AskaDB is not affiliated with Odoo S.A.</p>
+  </section>
+
   <section>
     <h2>Built for real work</h2>
     <p class="sub">The small details that make it feel smart.</p>
@@ -101,7 +124,7 @@ footer a{color:var(--muted);text-decoration:underline}footer a:hover{color:#6d4a
     <div class="safe"><ul>
       <li><b>Read-only:</b> only SELECT queries run. Nothing is ever changed.</li>
       <li><b>Every query rolls back:</b> a database transaction that always ends with a rollback.</li>
-      <li><b>No data rows go to the AI:</b> only table and column names are shared.</li>
+      <li><b>No data rows go to the AI:</b> only table and column names, and their labels, are shared.</li>
       <li><b>Local option:</b> use Ollama and keep even the names on your own PC.</li>
       <li><b>Files stay in memory:</b> Excel and CSV are never copied to disk.</li>
       <li><b>Secrets hidden:</b> passwords and tokens are refused and masked.</li>
@@ -113,7 +136,7 @@ footer a{color:var(--muted);text-decoration:underline}footer a:hover{color:#6d4a
   <section id="db">
     <h2>Works with the data you have</h2>
     <p class="sub">Use a local model or a free AI key. You choose.</p>
-    <div class="chips"><span class="chip">SQL Server</span><span class="chip">PostgreSQL</span><span class="chip">MySQL / MariaDB</span><span class="chip">Oracle</span><span class="chip">SQLite</span><span class="chip">Excel</span><span class="chip">CSV</span><span class="chip">Ollama (local)</span><span class="chip">Google Gemini</span><span class="chip">Free AI keys</span></div>
+    <div class="chips"><span class="chip">Odoo 17 · 18 · 19</span><span class="chip">SQL Server</span><span class="chip">PostgreSQL</span><span class="chip">MySQL / MariaDB</span><span class="chip">Oracle</span><span class="chip">SQLite</span><span class="chip">Excel</span><span class="chip">CSV</span><span class="chip">Ollama (local)</span><span class="chip">Google Gemini</span><span class="chip">Free AI keys</span></div>
   </section>
 
   <section id="cta">
