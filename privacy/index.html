@@ -21,7 +21,7 @@ a{color:var(--accent)}h1{font-size:34px;margin:.4em 0 .2em;letter-spacing:-.02em
 <div class="w">
   <a class="logo" href="../"><img src="../icon.png" alt="">AskaDB</a>
   <h1>Privacy policy</h1>
-  <p class="m">AskaDB is made by Selecta Labs. Last updated: 8 November 2026.</p>
+  <p class="m">AskaDB is made by Selecta Labs. Last updated: 22 November 2026.</p>
 
   <div class="box"><b>In short:</b> AskaDB runs on your computer. It has no accounts, no ads and no tracking. It reads your data and never changes it. Your data rows are never sent to an AI.</div>
 
@@ -31,7 +31,11 @@ a{color:var(--accent)}h1{font-size:34px;margin:.4em 0 .2em;letter-spacing:-.02em
     <li><b>Your files.</b> Excel, CSV and SQLite files are opened in memory and are not copied or saved by AskaDB.</li>
     <li><b>Answers you confirm.</b> If you press the thumbs-up, AskaDB saves that question and its SQL on your computer to answer faster next time. You can erase them at any time with "Forget learned answers".</li>
     <li><b>A list of table and column names</b> of your database, saved on your computer so large databases open faster.</li>
+    <li><b>Saved reports, saved questions and schedules.</b> Saved on your computer. Each scheduled run reads your database again (read-only) on this computer.</li>
   </ul>
+
+  <h2>Emailed reports</h2>
+  <p>If you use "Email this result" or scheduled reports, AskaDB sends the email from <b>your own email account</b> (for example Gmail or Outlook) directly to the people you choose. The report files are made on your computer. Your email password or app password is encrypted with Windows and saved only on your computer. Selecta Labs does not receive these emails or their contents.</p>
 
   <h2>What is sent to an AI service</h2>
   <p>When you ask a question, AskaDB sends the AI provider <b>your question and the names of tables and columns</b> (and column descriptions, if your database has them). <b>It never sends data rows.</b> If an error happens, only the error text is sent so the query can be fixed.</p>
@@ -41,7 +45,8 @@ a{color:var(--accent)}h1{font-size:34px;margin:.4em 0 .2em;letter-spacing:-.02em
   </ul>
 
   <h2>What we collect</h2>
-  <p>Nothing. AskaDB has no analytics, no crash reporting and no accounts. Selecta Labs does not receive your questions, your data or your keys.</p>
+  <p>By default, nothing. AskaDB has no crash reporting and no accounts, and Selecta Labs never receives your questions, your data or your keys.</p>
+  <p><b>Optional anonymous usage statistics.</b> Off until you turn them on (AskaDB asks once, and you can change it any time in AI settings). If you turn them on, AskaDB sends Selecta Labs a random install ID, the app version, where it was installed from (Microsoft Store or installer), the Windows version, one mark for each day the app is used, and how many times each feature was used that day (for example "3 reports, 1 PDF export") with the <i>types</i> of data sources used (for example "PostgreSQL" or "Excel"). It never sends your questions, SQL, table or column names, connection details, file names, email addresses or any data. The statistics are stored with Supabase, can only be read by Selecta Labs admins, and are used only to see how often the app is used and which features to improve. Turn them off and nothing more is sent; counts waiting on your computer are deleted.</p>
 
   <h2>Safety of your database</h2>
   <p>AskaDB only runs read-only queries. Every query is checked, runs inside a transaction that is always rolled back, and has a limit of 1,000 rows and 30 seconds. We still recommend using a database account with read-only rights.</p>
@@ -54,7 +59,7 @@ a{color:var(--accent)}h1{font-size:34px;margin:.4em 0 .2em;letter-spacing:-.02em
 
   <h2>Changes and contact</h2>
   <h2>Website analytics</h2>
-  <p>Our websites use Cloudflare Web Analytics to count page visits. It uses no cookies, does not track you across sites, and does not identify you. The apps themselves send no analytics.</p>
+  <p>Our websites use Cloudflare Web Analytics to count page visits. It uses no cookies, does not track you across sites, and does not identify you. The app sends usage statistics only if you turn them on (see "What we collect").</p>
   <p>If this policy changes, we will update the date above. Questions? Open an issue at <a href="https://github.com/selectalabs/askadb/issues">github.com/selectalabs/askadb/issues</a>.</p>
   <p class="m" style="margin-top:28px"><a href="../">AskaDB home</a> &middot; <a href="https://apps.microsoft.com/detail/9N9RGB8ZRK8N" target="_blank" rel="noopener">Microsoft Store</a> &middot; <a href="https://selectalabs.github.io/" target="_blank" rel="noopener">Selecta Labs</a></p>
 </div>
