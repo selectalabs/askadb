@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AskaDB pricing</title>
+<meta name="description" content="AskaDB is free for questions on any database. AskaDB Pro adds the Odoo Report Center, period comparison and scheduled report emails.">
+<link rel="icon" href="../icon.png">
+<style>
+:root{--bg:#0e0f14;--panel:#15161d;--line:#2a2d3a;--ink:#eeeff5;--muted:#a2a5b8;--accent:#8b6cff;--good:#3ecf8e}
+@media(prefers-color-scheme:light){:root{--bg:#f6f6fa;--panel:#fff;--line:#e3e1ee;--ink:#15131f;--muted:#5a5670;--accent:#5b3fe0;--good:#13915a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+.w{max-width:1040px;margin:0 auto;padding:24px 16px 70px}
+a{color:var(--accent)}h1{font-size:38px;margin:.5em 0 .1em;letter-spacing:-.02em}h2{font-size:22px;margin:2em 0 .5em}h3{margin:0 0 4px;font-size:20px}
+.m{color:var(--muted)}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;text-decoration:none;color:inherit}.logo img{width:30px;height:30px;border-radius:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:24px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column}
+.card.pro{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}
+.price{font-size:34px;font-weight:800;margin:8px 0 0;letter-spacing:-.02em}.price small{font-size:15px;font-weight:500;color:var(--muted)}
+ul{padding-left:0;list-style:none;margin:16px 0}li{margin:.45em 0;padding-left:24px;position:relative}li:before{content:"✓";position:absolute;left:0;color:var(--good);font-weight:700}
+.btn{display:inline-block;margin-top:auto;text-align:center;padding:11px 16px;border-radius:10px;border:1px solid var(--line);text-decoration:none;color:var(--ink);font-weight:600}
+.btn.p{background:var(--accent);border-color:var(--accent);color:#fff}
+.tag{align-self:flex-start;display:inline-block;font-size:12px;font-weight:700;color:var(--accent);background:color-mix(in srgb,var(--accent) 15%,transparent);border-radius:99px;padding:2px 10px}
+.faq{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:6px 18px}.faq details{border-bottom:1px solid var(--line);padding:12px 0}.faq details:last-child{border:0}.faq summary{cursor:pointer;font-weight:600}
+footer{margin-top:48px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<div class="w">
+  <a class="logo" href="../"><img src="../icon.png" alt="">AskaDB</a>
+  <h1>Simple pricing</h1>
+  <p class="m">Ask questions on any database for free. Pay only when you want ready business reports for Odoo.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Free</h3>
+      <p class="price">$0</p>
+      <p class="m">For everyone, on every database.</p>
+      <ul>
+        <li>Ask questions in plain English</li>
+        <li>SQL Server, PostgreSQL, MySQL, Oracle, SQLite, Excel, CSV</li>
+        <li>Export answers to CSV, Excel and PDF</li>
+        <li>Save questions and email them on a schedule</li>
+        <li>Read-only: nothing is ever changed</li>
+      </ul>
+      <a class="btn" href="https://apps.microsoft.com/detail/9N9RGB8ZRK8N" target="_blank" rel="noopener">Get it on Microsoft Store</a>
+    </div>
+    <div class="card pro">
+      <span class="tag">For Odoo companies</span>
+      <h3 style="margin-top:8px">AskaDB Pro</h3>
+      <p class="price">$49 <small>per company / month</small></p>
+      <p class="m">or $490 per year. Up to 10 PCs. 14-day free trial.</p>
+      <ul>
+        <li>Odoo Report Center: 7 ready reports</li>
+        <li>Compare with last month, quarter or year</li>
+        <li>Report emails every day, week or month</li>
+        <li>Odoo knowledge for more accurate answers</li>
+        <li>Email support</li>
+      </ul>
+      <a class="btn p" href="https://selectalabs.gumroad.com/l/askadb-pro" target="_blank" rel="noopener">Get AskaDB Pro</a>
+    </div>
+    <div class="card">
+      <h3>Setup service</h3>
+      <p class="price">from $250 <small>one time</small></p>
+      <p class="m">In Egypt from 5,000 EGP. We do it for you.</p>
+      <ul>
+        <li>Install AskaDB and connect Odoo read-only</li>
+        <li>3 reports built for your business</li>
+        <li>A weekly report email to the manager</li>
+        <li>1 hour of training for your team</li>
+      </ul>
+      <a class="btn" href="https://www.linkedin.com/company/140384006/" target="_blank" rel="noopener">Book a demo</a>
+    </div>
+  </div>
+
+  <h2>For Odoo partners</h2>
+  <div class="faq" style="padding:16px 18px">
+    <p style="margin:0">Your clients keep asking for "one more report". Give them AskaDB instead. <b>You earn 30% of every Pro subscription you bring</b>, for as long as the client pays, and you can sell the setup service yourself. White-label (your own name) on request.</p>
+    <p style="margin:12px 0 0"><a class="btn p" href="https://www.linkedin.com/company/140384006/" target="_blank" rel="noopener">Become a partner</a></p>
+  </div>
+
+  <h2>Questions</h2>
+  <div class="faq">
+    <details><summary>Which Odoo setups work?</summary><p>Odoo on your own server (Community or Enterprise), where AskaDB can connect to the PostgreSQL database with a read-only login. Odoo Online (SaaS) does not give database access, so it is not supported. The reports are tested on Odoo 18.</p></details>
+    <details><summary>Is my data safe?</summary><p>AskaDB only reads. Every query is checked and rolled back. Only table and column names go to the AI, never your data rows. Reports and emails are made on your PC and sent from your own mailbox. See the <a href="../privacy/">privacy policy</a>.</p></details>
+    <details><summary>What happens after the trial?</summary><p>The trial starts when you first open an Odoo database. After 14 days the Report Center, comparisons and Report Center emails need Pro. Asking questions, exports and saved questions stay free.</p></details>
+    <details><summary>Can I cancel?</summary><p>Yes, any time, from your Gumroad receipt. Pro keeps working until the end of the period you paid for.</p></details>
+    <details><summary>Can I pay in Egyptian pounds or by bank transfer?</summary><p>Yes for companies in Egypt and the Gulf. Book a demo and we will send an invoice.</p></details>
+  </div>
+
+  <footer><a href="../">AskaDB home</a> · <a href="../privacy/">Privacy</a> · <a href="https://apps.microsoft.com/detail/9N9RGB8ZRK8N" target="_blank" rel="noopener">Microsoft Store</a> · © Selecta Labs</footer>
+</div>
+</body>
+</html>
